@@ -44,7 +44,7 @@ db.connect((err) => {
 //   res.send({ message: "User not registered" });
 // });
 
-app.listen(0.0, () => {
+app.listen(5000, () => {
   console.log("port started at port 5000");
 });
 
