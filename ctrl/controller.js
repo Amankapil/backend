@@ -1,33 +1,33 @@
-import db from "../index.js";
+// import db from "../index.js";
 import nodemailer from "nodemailer";
 
-export const addWebInfo = (req, res) => {
-  try {
-    const { homeHero, homeAbout, homeService, homeClient, homeBlog } = req.body;
-    // if (homeHero) {
-    //   res.status(200);
-    // } else {
-    //   res.status(500);
-    //   res.send({ message: "please Enter valid details" });
-    // }
-    const data = {
-      homeHero: homeHero,
-      homeAbout: homeAbout,
-      homeService: homeService,
-      homeClient: homeClient,
-      homeBlog: homeBlog,
-    };
+// export const addWebInfo = (req, res) => {
+//   try {
+//     const { homeHero, homeAbout, homeService, homeClient, homeBlog } = req.body;
+//     // if (homeHero) {
+//     //   res.status(200);
+//     // } else {
+//     //   res.status(500);
+//     //   res.send({ message: "please Enter valid details" });
+//     // }
+//     const data = {
+//       homeHero: homeHero,
+//       homeAbout: homeAbout,
+//       homeService: homeService,
+//       homeClient: homeClient,
+//       homeBlog: homeBlog,
+//     };
 
-    db.query("INSERT INTO home_page set ?", data, (err, rows, fields) => {
-      if (err) {
-        console.error(err);
-      } else {
-        console.log(rows);
-        res.send("added");
-      }
-    });
-  } catch (err) {}
-};
+//     db.query("INSERT INTO home_page set ?", data, (err, rows, fields) => {
+//       if (err) {
+//         console.error(err);
+//       } else {
+//         console.log(rows);
+//         res.send("added");
+//       }
+//     });
+//   } catch (err) {}
+// };
 // careers page - hr@codelinear.com
 // contact us page - info@codelinear.com
 
@@ -157,22 +157,22 @@ export const sendMailCareer = (req, res) => {
 //     }
 //   );
 // };
-export const getweb = (req, res) => {
-  // app.get("", (req, res) => {
-  db.query("SELECT * FROM home_page", (err, rows, fields) => {
-    if (err) {
-      console.error(err);
-    } else {
-      res.send("welcome to the home page")
-      console.log(rows);
-      // let rve = rows.reverse();
-      // const erve = rve[0];
-      // res.send(erve);
-    }
-  });
-  console.log("welcome");
-  // });
-};
+// export const getweb = (req, res) => {
+//   // app.get("", (req, res) => {
+//   db.query("SELECT * FROM home_page", (err, rows, fields) => {
+//     if (err) {
+//       console.error(err);
+//     } else {
+//       res.send("welcome to the home page")
+//       console.log(rows);
+//       // let rve = rows.reverse();
+//       // const erve = rve[0];
+//       // res.send(erve);
+//     }
+//   });
+//   console.log("welcome");
+//   // });
+// };
 
 export const Login = (req, res) => {
   const { email, password } = req.body;

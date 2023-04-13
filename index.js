@@ -14,19 +14,19 @@ app.use(bodyParser.json());
 
 app.use(webroute);
 
-const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "dashboard",
-});
-db.connect((err) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("Database Connected");
-  }
-});
+// const db = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "",
+//   database: "dashboard",
+// });
+// db.connect((err) => {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log("Database Connected");
+//   }
+// });
 
 //Routes
 // app.post("/login", (req, res) => {
@@ -48,4 +48,4 @@ app.listen(5000, () => {
   console.log("port started at port 5000");
 });
 
-export default db;
+// export default db;
