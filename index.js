@@ -12,7 +12,7 @@ app.use(express.urlencoded());
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use("/code", webroute);
+app.use(webroute);
 
 const db = mysql.createConnection({
   host: "localhost",
