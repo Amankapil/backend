@@ -163,10 +163,11 @@ export const getweb = (req, res) => {
     if (err) {
       console.error(err);
     } else {
+      res.send("welcome to the home page")
       console.log(rows);
-      let rve = rows.reverse();
-      const erve = rve[0];
-      res.send(erve);
+      // let rve = rows.reverse();
+      // const erve = rve[0];
+      // res.send(erve);
     }
   });
   console.log("welcome");
