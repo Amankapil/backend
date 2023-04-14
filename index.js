@@ -14,6 +14,9 @@ app.use(bodyParser.json());
 
 app.use(webroute);
 
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 // const db = mysql.createConnection({
 //   host: "localhost",
 //   user: "root",
@@ -44,8 +47,8 @@ app.use(webroute);
 //   res.send({ message: "User not registered" });
 // });
 
-app.listen(5000, () => {
-  console.log("port started at port 5000");
-});
+// app.listen(5000, () => {
+//   console.log("port started at port 5000");
+// });
 
 // export default db;
