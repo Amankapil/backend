@@ -38,15 +38,15 @@ export const sendMailContact = (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "amankapil60@gmail.com", // Replace with your own email address
-      pass: "zcgdsscknnjxmjlh", // Replace with your own email password
-    },
+      user: "info@codelinear.com", // Replace with your own email address
+      pass: "hffsiftjfbzbraej", // Replace with your own email password
+    },  
   });
   // zcgdsscknnjxmjlh
 
   const mailOptions = {
     from: { email }, // Replace with your own email address
-    to: "amankapil60@gmail.com", // Replace with the recipient's email address
+    to: "info@codelinear.com", // Replace with the recipient's email address
     subject: "New message from your website",
     text: `FristName: ${fristName}\n LastName: ${lastName}\n Email: ${email}\n Number: ${number}\nMessage: ${message}`,
   };
@@ -67,8 +67,8 @@ export const sendMailCareer = (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "amankapil60@gmail.com", // Replace with your own email address
-      pass: "zcgdsscknnjxmjlh", // Replace with your own email password
+      user: "hr@codlinear.com", // Replace with your own email address
+      pass: "hhsmejuvtkademrt", // Replace with your own email password
     },
   });
   // zcgdsscknnjxmjlh

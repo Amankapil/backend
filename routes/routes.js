@@ -20,7 +20,7 @@ router.post("/send_mail", sendMailContact);
 router.post("/send_mail_career", sendMailCareer);
 
 // router.get("/logout", Logout);
-// router.put("/update/:id", updateWebInfo);
+// router.put("/update/:id", updateWebInfo); hhsmejuvtkademrt
 // router.delete("/dele/:id", remove);
 
 export default router;
