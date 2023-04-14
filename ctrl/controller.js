@@ -45,8 +45,8 @@ export const sendMailContact = (req, res) => {
   // zcgdsscknnjxmjlh
 
   const mailOptions = {
-    from: "amankapil60@gmail.com", // Replace with your own email address
-    to: "rcky876@gmail.com", // Replace with the recipient's email address
+    from: { email }, // Replace with your own email address
+    to: "amankapil60@gmail.com", // Replace with the recipient's email address
     subject: "New message from your website",
     text: `FristName: ${fristName}\n LastName: ${lastName}\n Email: ${email}\n Number: ${number}\nMessage: ${message}`,
   };
@@ -74,8 +74,8 @@ export const sendMailCareer = (req, res) => {
   // zcgdsscknnjxmjlh
 
   const mailOptions = {
-    from: "amankapil60@gmail.com", // Replace with your own email address
-    to: "rcky876@gmail.com", // Replace with the recipient's email address
+    from: { email }, // Replace with your own email address
+    to: "hr@codelinear.com", // Replace with the recipient's email address
     subject: "New message from your website",
     text: `FristName: ${fristName}\n LastName: ${lastName}\n Email: ${email}\nMessage: ${message}`,
   };
